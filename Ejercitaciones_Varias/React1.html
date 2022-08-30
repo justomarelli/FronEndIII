@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creando Elementos con JSX</title>
+</head>
+<body>
+<script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+
+<div id="root"> </div>
+
+<script type="text/babel">
+
+// create a React component with a h2 title "Listado" and a ul list with the items "soy", "una" and "lista"
+const List = () => (
+  <div>
+    <h2>Listado</h2>
+    <ul>
+      <li>Soy</li>
+      <li>Una</li>
+      <li>Lista</li>
+    </ul>
+  </div>
+);
+
+// render the component into the DOM
+ReactDOM.render(<List />, document.getElementById('root'));
+
+</script>
+</body>
+</html>
